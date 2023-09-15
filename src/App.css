@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.container{
+  margin-top: 200px;
+  padding-bottom: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 4em;
+  font-family: "Inter", sans-serif;
+  color: #9055A2 ;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -.06em;
+  text-shadow:0px 0px 10px rgb(154, 89, 165);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.div-tasks{
+  display: flex; 
+  width: 100%;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.underline {
+  /* position: absolute; */
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #9055A2;
+}
+
+p {
+  font-size: 12px;
+  font-weight: 200;
+}
+.All{
+  list-style: none;
+  text-decoration-color: #9055A2;
+  color: #9055A2;
+  
+}
+.Active{
+  list-style: none;
+  text-decoration-color: #9055A2;
+  color: #9055A2;
+
+}
+.Completed{
+  list-style: none;
+  text-decoration-color: #9055A2;
+  color: #9055A2;
+
+}
+h4 {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+.input-div{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-Items: center;
+  width: 100%;
+  justify-content: space-between;
+  
 }
 
-.App-link {
-  color: #61dafb;
+input{
+  font-family: "Unbounded", sans-serif;
+  width: 70%;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;   
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer{
+  display: flex;
+  justify-Content: space-between;
+  align-Items: center;
+  width: 98%;
+  padding-Left: 5; 
 }
+
+ul{
+  display: flex;
+  width: 72%;
+  justify-Content: space-between 
+} 
+
