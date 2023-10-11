@@ -101,8 +101,8 @@ export const List = ({ tasks, EditTasks, setFilter, setTasks , setIsFirstRender,
                                     </div>
                                 </motion.div>
                                 <div style={{ width: "15%", display: "flex", justifyContent: "space-between", paddingRight: "10px" }}>
-                                    <motion.div variants={iconVariants} whileHover="hover" ><FaPencil onClick={() => handleEdit(task.id)}/></motion.div>
-                                    <motion.div variants={iconVariants} whileHover="hover" ><FaTrashCan onClick={() => handleRemove(task.id)}/></motion.div>
+                                    <motion.div variants={iconVariants} whileHover="hover" ><FaPencil className="icon" onClick={() => handleEdit(task.id)}/></motion.div>
+                                    <motion.div variants={iconVariants} whileHover="hover" ><FaTrashCan className="icon" onClick={() => handleRemove(task.id)}/></motion.div>
                                 </div>
                             </motion.section>
                     )

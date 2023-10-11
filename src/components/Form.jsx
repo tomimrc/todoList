@@ -83,9 +83,11 @@ export const Form = ({ tasks, setTasks, setFilteredTasks,setIsFirstRender}) => {
                             >
                     <motion.input whileHover={{boxShadow:"0px 0px 8px rgb(134, 22, 110)", transition:{duration:1, delay:0}}} type="text" id="text" value={inputTask} onChange={handleChange} placeholder="Que tarea quieres agregar?" />
                     <div style={{ width: "15%", display: "flex", justifyContent: "space-between", paddingRight: "10px" }}>
-                    <motion.button  variants={iconVariants} whileHover="hover" style={{ backgroundColor: "transparent", border: "none", padding:0 }} type="submit"><FaPlus style={{fontSize: "16px"}} /></motion.button>
+                    <motion.button  variants={iconVariants} whileHover="hover" style={{ backgroundColor: "transparent", border: "none", padding:0 }} type="submit">
+                        <FaPlus className="icon" style={{fontSize: "16px"}} />
+                    </motion.button>
                     <motion.div variants={iconVariants} whileHover="hover">
-                        <FaTrashCan  onClick={handleDelete} />
+                        <FaTrashCan className="icon" onClick={handleDelete} />
                     </motion.div>
                     </div>
                 </motion.div>

@@ -26,7 +26,7 @@ export const EditTasks = ({ task, handleEditTask }) => {
             fontsize: "16px",
             fontweight: 300,   
             padding: "10px",}} />
-            <button style={{cursor: "pointer" , backgroundColor: "transparent", border:"none"}}><FaCheck type="submit" style={{fontSize:"16px"}} /></button>
+            <button style={{cursor: "pointer" , backgroundColor: "transparent", border:"none"}}><FaCheck  type="submit" style={{fontSize:"16px"}} /></button>
         </motion.form>
     </AnimatePresence>
     )
